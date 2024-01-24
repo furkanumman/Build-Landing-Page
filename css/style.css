@@ -262,6 +262,13 @@ button.button {
   margin: 140px auto 110px;
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 15px;
+  height: 457px;
 }
 
 .container-subscribe_left h1 {
@@ -293,16 +300,25 @@ button.button {
 }
 .container-subscribe_left_subscribe-email {
   margin-left: 43px;
+  width: 469px;
+  max-width: 100%;
+  position: relative;
 }
 
 .container-subscribe_left_subscribe-email input {
-  border-radius: 40px;
-  /* border-color: transparent; */
   background: var(--white-color);
-  width: 469px;
-  height: 60px;
+  border: 0px transparent var(--white-color);
+  border-radius: 40px;
+  width: 443px;
+  height: 58px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; /* 150% */
   padding-left: 24px;
+}
+
+.container-subscribe_left_subscribe-email a {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
